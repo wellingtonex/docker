@@ -48,3 +48,12 @@ docker build -t ubuntu/apache .
 docker inspect name|ip: Retornará diversas informações. Sendo uma delas o ip que procuramos:
 
 cat /etc/hosts //mostra o ip
+
+
+
+docker run -it -v $(pwd):/tmp ubuntu bash
+
+O -v cria um volume para dentro do container. Todos os arquivos que forem criados a partir dessa conexão entre nosso Host Local e o container serão persistidos. Perceba que os arquivos serão criados dentro do container:
+
+
+Lembre-se: Os dados do banco de dados ficam salvos nas pasta /var/lib/mysql no contêiner
