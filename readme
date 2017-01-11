@@ -43,3 +43,8 @@ apachectl start
 
 Construindo uma imagem a partir do Dockerfile:
 docker build -t ubuntu/apache .
+
+
+docker inspect name|ip: Retornará diversas informações. Sendo uma delas o ip que procuramos:
+
+cat /etc/hosts //mostra o ip
